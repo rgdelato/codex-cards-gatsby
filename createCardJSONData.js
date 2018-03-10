@@ -74,13 +74,14 @@ var keywords = Object.keys(
     (acc, ruling) => Object.assign({}, acc, { [ruling.card]: true }),
     {}
   )
-).map(keyword => {
-  if (keyword.lastIndexOf(" X") === keyword.length - 2) {
-    return keyword.slice(0, -2);
-  } else {
-    return keyword;
-  }
-});
+);
+// ).map(keyword => {
+//   if (keyword.lastIndexOf(" X") === keyword.length - 2) {
+//     return keyword.slice(0, -2);
+//   } else {
+//     return keyword;
+//   }
+// });
 
 var createKeywords = item => {
   var uniqueKeywords = {};
@@ -90,7 +91,14 @@ var createKeywords = item => {
       const cardText = item[key].replace(/\(.*?\)/g, ""); // remove parenthetical text
 
       keywords.forEach(keyword => {
-        if (cardText.toLowerCase().indexOf(keyword.toLowerCase()) !== -1) {
+        let fixedKeyword;
+        if (keyword.lastIndexOf(" X") === keyword.length - 2) {
+          fixedKeyword = keyword.slice(0, -2);
+        } else {
+          fixedKeyword = keyword;
+        }
+
+        if (cardText.toLowerCase().indexOf(fixedKeyword.toLowerCase()) !== -1) {
           uniqueKeywords[keyword] = true;
         }
       });
