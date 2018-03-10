@@ -44,7 +44,7 @@ const Images = ({ data: { allCardsJson }, pathContext: { color } }) => {
               >
                 <Link to={`/card/${node.slug}`}>
                   <img
-                    src={`http://codexcards-assets.surge.sh/images/${
+                    src={`//codexcards-assets.surge.sh/images/${
                       node.sirlins_filename
                     }`}
                     alt={node.name}
@@ -74,7 +74,7 @@ const Images = ({ data: { allCardsJson }, pathContext: { color } }) => {
                 >
                   <Link to={`/card/${node.slug}`}>
                     <img
-                      src={`http://codexcards-assets.surge.sh/images/${
+                      src={`//codexcards-assets.surge.sh/images/${
                         node.sirlins_filename
                       }`}
                       alt={node.name}

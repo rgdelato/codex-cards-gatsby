@@ -35,7 +35,7 @@ const Card = ({ data: { cardsJson } }) => (
         `}
       >
         <img
-          src={`http://codexcards-assets.surge.sh/images/${
+          src={`//codexcards-assets.surge.sh/images/${
             cardsJson.sirlins_filename
           }`}
           alt={cardsJson.name}

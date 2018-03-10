@@ -33,7 +33,7 @@ const Map = ({ data: { mapsJson } }) => (
         `}
       >
         <img
-          src={`http://codexcards-assets.surge.sh/images/${mapsJson.filename}`}
+          src={`//codexcards-assets.surge.sh/images/${mapsJson.filename}`}
           alt={mapsJson.name}
           className={css`
             @media (min-width: 370px) {

@@ -22,7 +22,7 @@ const MapsPage = ({ data }) => (
         >
           <Link to={`/map/${node.slug}`}>
             <img
-              src={`http://codexcards-assets.surge.sh/images/${node.filename}`}
+              src={`//codexcards-assets.surge.sh/images/${node.filename}`}
               alt={node.name}
               width="330"
               height="450"
