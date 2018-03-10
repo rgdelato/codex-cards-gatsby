@@ -53,7 +53,14 @@ const IndexPage = () => (
 
     <p>
       <a href="https://www.algolia.com/" target="_blank">
-        <img src={algoliaSVG} alt="Search by Algolia" width="130" height="18" />
+        <img
+          src={algoliaSVG}
+          alt="Search by Algolia"
+          className={css`
+            width: 130px;
+            height: 18px;
+          `}
+        />
       </a>
     </p>
 
