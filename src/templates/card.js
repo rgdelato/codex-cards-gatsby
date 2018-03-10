@@ -122,7 +122,7 @@ const Card = ({ data: { cardsJson } }) => (
         ))}
 
         <p>
-          {cardsJson.keywords.length ? "Keywords: " : null}
+          {cardsJson.keywords.length ? "Keyword Rulings: " : null}
           {cardsJson.keywords.map((keyword, i) => (
             <span key={keyword}>
               {i !== 0 ? ", " : null}
