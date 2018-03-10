@@ -11,16 +11,18 @@ var purpleCards = require("./raw_data/purple.json");
 var mapCards = require("./raw_data/maps.json");
 var rulings = require("./raw_data/rulings.json");
 
-var allCards = [].concat(
-  heroCards,
-  neutralCards,
-  redCards,
-  greenCards,
-  blueCards,
-  blackCards,
-  whiteCards,
-  purpleCards
-);
+var allCards = []
+  .concat(
+    heroCards,
+    neutralCards,
+    redCards,
+    greenCards,
+    blueCards,
+    blackCards,
+    whiteCards,
+    purpleCards
+  )
+  .filter(card => card.sirlins_filename); // removing tokens/workers/buildings
 
 var allRulings = Object.keys(rulings).reduce((acc, key) => {
   return acc.concat(rulings[key]);

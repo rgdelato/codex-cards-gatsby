@@ -10,13 +10,7 @@ import "semantic-ui-icon/icon.min.css";
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet
-      title="Codex Card Database"
-      meta={[
-        { name: "description", content: "Sample" },
-        { name: "keywords", content: "sample, something" }
-      ]}
-    />
+    <Helmet title="Codex Card Database" />
     <Header />
     <div
       className={css`

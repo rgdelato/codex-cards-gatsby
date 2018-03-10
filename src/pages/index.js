@@ -45,11 +45,10 @@ const IndexPage = () => (
       <Link to="/maps">Map Cards</Link>
     </p>
 
-    {/* <p>
+    <p>
       <Link to="/card/random">Random Card</Link> |{" "}
-      <Link to="/deck/random">Random Deck</Link> |{" "}
       <Link to="/map/random">Random Map</Link>
-    </p> */}
+    </p>
 
     <p>
       <a href="https://www.algolia.com/" target="_blank">
