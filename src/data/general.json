@@ -1,0 +1,680 @@
+[
+  {
+    "card": "Anti-air",
+    "abilityText": "Can attack fliers, but can ignore patrolling fliers. Deals combat damage to fliers it fights or that fly over this while it patrols.",
+    "slug": "antiair",
+    "rulings": [
+      {
+        "ruling": "You don't have to attack patrolling fliers with your anti-air attacker. You can ignore them and attack something else if you want.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "When one of your ground forces WITH anti-air gets attacked by a flier, each deals combat damage to the other. If your ground unit or hero doesn't have anti-air though, the flier will deal its combat damage \"for free\" to your ground unit or hero, and you won't get to hit back.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "When something \"flies over\" your patroller with anti-air, that means it used FLYING in particular to ignore your patroller. For example, if an attacker has stealth and flying and you don't have a detector, then the attacker doesn't even need to use flying to ignore your patroller. Stealth allows it to ignore your patroller so no \"fly over\" happened there and your anti-air patroller will not hit the attacker.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "If you have multiple patrollers with anti-air, they all deal combat damage to a flier that flies over all of them. For example, if you have a squad leader and two other patrollers, all three of which have anti-air, and a flier attacks your tech II building, then the flier deals its combat damage to the tech II building simultaneously as the three anti-air patrollers deal combat damage to the flier. But if that same flier were to attack just your squad leader, your two OTHER patrollers wouldn't deal combat damage to it because it did not \"fly over\" them. Or if that same flier attacked one of those two patrollers, the squad leader would deal combat damage to it (and the anti-air patroller it attacked would), but the third anti-air patroller would not deal combat damage to it because the flier didn't \"fly over\" that particular patroller.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "All combat damage (except swift strike) is dealt simultaneously, and anti-air is not an exception. Anti-air combat damage is dealt at the same time as everything else, unless it has swift strike, in which case it's dealt before combat damage that doesn't have swift strike.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "A unit or hero that has both flying and anti-air does not benefit from anti-air. In other words, anti-air doesn't allow your fliers to ignore patrollers with flying. Fliers can already attack and damage other fliers, and patrollers with flying can't be flown over anyway.",
+        "date": "2016-03-15T07:00:00.000Z",
+        "author": "sharpo"
+      },
+      {
+        "ruling": "Anti-air does not stack. Having two instances of anti-air is the same as having just one.",
+        "date": "2016-09-16T07:00:00.000Z",
+        "author": "sharpo"
+      }
+    ]
+  },
+  {
+    "card": "Boost X",
+    "abilityText": "You may pay an additional X when you play this to get the boost effect.",
+    "slug": "boost_x",
+    "rulings": [
+      {
+        "ruling": "If something has you \"put a unit into play,\" that's different from \"playing it\" so you can't pay for or use a boost effect in that case. Likewise, if a unit with a boost enters play through any means other than playing it (such as being returned from Second Chances or Geiger or Pasternaak's max level abilities) then you can't use its boost.",
+        "date": "2016-03-11T08:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "Using Graveyard, Jurisdiction, and Vir Garbarean you can \"play\" a card from a zone other than your hand. You can still use boost when playing a card this way.",
+        "date": "2016-09-17T07:00:00.000Z",
+        "author": "sharpo"
+      },
+      {
+        "ruling": "If an opponent has Jail and you play a unit with a boost, you CAN pay for and use the boost. You do that immediately as you play the unit from your hand, then the boost effect happens and your unit goes to Jail. When it leaves Jail and arrives in play, you do not have a chance to pay for or use the boost a second time.",
+        "date": "2016-03-11T08:00:00.000Z",
+        "author": "Sirlin"
+      }
+    ]
+  },
+  {
+    "card": "Channelling",
+    "abilityText": "Stays in play. Sacrifice it when you lose your ____ hero.",
+    "slug": "channelling",
+    "rulings": [
+      {
+        "ruling": "If at any moment you don't control the correct hero for a channeling spell, you sacrifice the channeling spell.",
+        "date": "2016-03-11T08:00:00.000Z",
+        "author": "Sirlin"
+      }
+    ]
+  },
+  {
+    "card": "Deathtouch",
+    "abilityText": "Combat damage this deals to units or heroes, even to their armor, kills them.",
+    "slug": "deathtouch",
+    "rulings": [
+      {
+        "ruling": "Anything that checks for \"dying from combat damage\" such as Brave Knight or Gilded Glaxx does \"die from combat damage\" if deathtouch hits it.",
+        "date": "2016-03-11T08:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "Deathtouch does not stack. Having two instances of deathtouch is the same as having just one.",
+        "date": "2016-09-16T07:00:00.000Z",
+        "author": "sharpo"
+      }
+    ]
+  },
+  {
+    "card": "Detector",
+    "abilityText": "Opposing stealth and invisible forces are visible to you.",
+    "slug": "detector",
+    "rulings": [
+      {}
+    ]
+  },
+  {
+    "card": "Ephemeral",
+    "abilityText": "Dies at end of turn.",
+    "slug": "ephemeral",
+    "rulings": [
+      {
+        "ruling": "Ephemeral triggers at the end of each player's turn.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "sharpo"
+      }
+    ]
+  },
+  {
+    "card": "Fading X",
+    "abilityText": "Arrives with X time runes. Remove one each upkeep. When you remove the last, sacrifice this.",
+    "slug": "fading_x",
+    "rulings": [
+      {
+        "ruling": "If you remove the last time rune for some other reason than the fading ability, such as from Time Spiral, Seer, or Tinkerer, you still must sacrifice the fading thing.",
+        "date": "2016-03-11T08:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "If you somehow have something with fading in play with 0 time runes (probably because you made a copy of something if fading), it won't die from fading anymore.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "sharpo"
+      },
+      {
+        "ruling": "X is not a limit to the number of time runes you can have on that card. For example, you can play Shimmer Ray and discard 4 cards so that it has 6 time runes; you're not limited to 2 total.",
+        "date": "2016-03-19T07:00:00.000Z",
+        "author": "Sirlin"
+      }
+    ]
+  },
+  {
+    "card": "Flying",
+    "abilityText": "Can fly over ground patrollers. Ground forces without anti-air can't attack this or deal combat damage to it when attacked.",
+    "slug": "flying",
+    "rulings": [
+      {
+        "ruling": "As a conceptual shorthand, think about flying and anti-air as follows:\n\nGround forces without anti-air can only shoot straight. They can never hit fliers, ever.\nFlying forces can shoot both straight and down.\nAnti-air forces can shoot both straight and up. This is never a handicap because even though they CAN hit patrolling fliers, they aren't forced to.\n\nAs a patroller, you only stop an attacker if it's on the *same* level as you.\nAnti-air ground forces on patrol will shoot at fliers as they fly over.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "Fliers can ignore patrollers that don't have flying. In other words, they can attack something else instead if you want.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "Fliers cannot ignore flying patrollers. The usual rules of the patrol zone apply, meaning if you want to attack with a flier at all, that flier CAN attack patrolling fliers so it must do that rather than attack other things such as non-patrollers or tech buildings.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "When a flier attacks another flier or gets attacked by another flier, they both deal combat damage to each other as usual. When a flier attacks a ground unit or hero without anti-air, the flier deals its combat damage to the ground thing and the ground thing does NOT deal any combat damage to the flier. Ground forces without anti-air cannot even attack a flier at all. Ground forces with anti-air can attack fliers and deal combat damage to them as usual when they do.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      }
+    ]
+  },
+  {
+    "card": "Forecast X",
+    "abilityText": "Starts off in the future, not in play. Put X time runes on this and remove one each upkeep. When you remove the last, it arrives.",
+    "slug": "forecast_x",
+    "rulings": [
+      {
+        "ruling": "When it would come into play from something other than forecast, instead it goes to the \"future\" zone and gets time runes.",
+        "date": "2016-03-11T08:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "To play a forecasted thing from your hand, you must meet the requirements to play it, like any card. You do NOT need to meet any requirements when it later arrives / resolves. For example, playing a forecasted Future tech II unit requires a Future tech II building, then the forecasted unit goes to the future, and if your Future tech II building is destroyed before the time runes are all removed, that's fine, the Future tech II unit will still arrive when the last time rune is removed.",
+        "date": "2016-03-11T08:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "Forecasted units do not go to Jail.",
+        "date": "2016-03-11T08:00:00.000Z",
+        "author": "Sirlin"
+      }
+    ]
+  },
+  {
+    "card": "Frenzy X",
+    "abilityText": "Gets +X ATK on your turn.",
+    "slug": "frenzy_x",
+    "rulings": [
+      {
+        "ruling": "It loses the extra ATK at the end of the turn.",
+        "date": "2016-03-19T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "This does stack, so if one of your units gets frenzy 1 twice, it gets +2 ATK on your turn.",
+        "date": "2016-03-11T08:00:00.000Z",
+        "author": "Sirlin"
+      }
+    ]
+  },
+  {
+    "card": "Haste",
+    "abilityText": "Can attack and exhaust the turn it arrives.",
+    "slug": "haste",
+    "rulings": [
+      {
+        "ruling": "Haste allows things that came under your control this turn use exhaust abilities, which means abilities that have exhaust as part of the cost (that is, the exhaust symbol BEFORE an arrow.) Haste also allows units and heroes to attack that came under your control this turn.",
+        "date": "2016-03-11T08:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "Things do NOT need haste to become exhausted as the result of an effect. For example, you can play a unit then immediately exhaust it with Boot Camp because the exhaust is an effect there, not a cost.",
+        "date": "2016-03-11T08:00:00.000Z",
+        "author": "Sirlin"
+      }
+    ]
+  },
+  {
+    "card": "Healing X",
+    "abilityText": "During your upkeep, heal X damage from all friendly units and heroes.",
+    "slug": "healing_x",
+    "rulings": [
+      {
+        "ruling": "Damage is always recorded on an object in the form of damage chits. Healing is able to remove those damage chits. Healing is not able to increase the maximum HP of something. Healing does not interact with -1/-1 runes, either. All it does is remove damage chits from things that have them.",
+        "date": "2016-03-11T08:00:00.000Z",
+        "author": "Sirlin"
+      }
+    ]
+  },
+  {
+    "card": "Illusion",
+    "abilityText": "Illusions die when [targeted] \u0003by spells or abilities.",
+    "slug": "illusion",
+    "rulings": [
+      {
+        "ruling": "Illusions die immediately if they are targeted by a spell or ability. At the moment they are targeted, they die (and go to their owner's discard pile). That means if an effect would target an illusion and deal 3 damage to it, or target it and put a rune on it, the illusion is already dead and gone before the effect happens. It never actually takes the 3 damage or gets the rune in those examples.",
+        "date": "2016-03-11T08:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "Attacking an Illusion does not automatically kill it. Illusions only immediately die if they are targeted by a spell or ability.",
+        "date": "2016-03-11T08:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "\"Illusion\" is a subtype that a unit can have, it's not an ability. That means Spectral Hound, for example, does not have any abilities if Midori's middle ability checks for things \"with no abilities\".",
+        "date": "2016-03-11T08:00:00.000Z",
+        "author": "Sirlin"
+      }
+    ]
+  },
+  {
+    "card": "Indestructible",
+    "abilityText": "If this would die, exhaust it and remove all damage and attachments from it instead. You can't sacrifice it.",
+    "slug": "indestructible",
+    "rulings": [
+      {
+        "ruling": "If an indestructible thing has 0 HP because of having -1/-1 runes, it will remain exhausted forever. If it gets any damage or attachments in this state, immediately remove the damage and/or attachments.",
+        "date": "2016-03-19T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "Attachments are cards that attach to a unit or hero, like \"Spirit of the Panda\" or \"Entangling Vines\". Runes and other ongoing spells or effects are not attachments.",
+        "date": "2016-03-19T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "Even if it has -1/-1 runes that were from something that \"dealt combat damage in the form of -1/-1 runes,\" you still don't remove them when the indestructible thing would die.",
+        "date": "2016-03-19T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "Some effects like Obliterate, Sacrifice the Weak, and Death Rites ask a player to destroy or sacrifice the unit that is the least according to some ordering. These effects skip units with Indestructible and units that cannot leave play.",
+        "date": "2016-11-24T08:00:00.000Z",
+        "author": "sharpo"
+      }
+    ]
+  },
+  {
+    "card": "Invisible",
+    "abilityText": "To opponents without a detector, this is untargetable, unattackable, and can sneak past patrollers. While patrolling, this is attackable.",
+    "slug": "invisible",
+    "rulings": [
+      {
+        "ruling": "\"Sneaking past\" means you can ignore patrollers when attacking and attack anything you want. You can also attack the patrollers if you prefer.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "When something invisible attacks an enemy unit or hero, that enemy unit or hero DOES deal its combat damage back as usual.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "If an opponent has the Tower add-on and their tower has already used its once-per-turn detect on something, then you attack with something invisible, the Tower will not deal its damage to your invisible thing. It would if it's once-per-turn detect hadn't been used, but it can only damage things it can see.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "You can [target] your own invisible things whether you have a detector or not.",
+        "date": "2016-03-19T07:00:00.000Z",
+        "author": "Sirlin"
+      }
+    ]
+  },
+  {
+    "card": "Long-range",
+    "abilityText": "Defenders without long-range deal no damage to this when it attacks.",
+    "slug": "longrange",
+    "rulings": [
+      {
+        "ruling": "Long-range does not prevent anti-air patrollers that the attacker flies over from dealing damage.",
+        "date": "2017-01-08T08:00:00.000Z",
+        "author": "sharpo"
+      },
+      {
+        "ruling": "Long-range does not prevent towers from dealing damage.",
+        "date": "2017-01-08T08:00:00.000Z",
+        "author": "sharpo"
+      }
+    ]
+  },
+  {
+    "card": "Obliterate X",
+    "abilityText": "Whenever this attacks, destroy the defender's X lowest tech units first.",
+    "slug": "obliterate_x",
+    "rulings": [
+      {
+        "ruling": "Obliterate never targets. Having resist or being untargetable doesn't help against obliterate.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "If there are any units that are indestructible or that can't leave play, ignore them when looking for the lowest tech unit. If such a thing would be their \"lowest tech unit\" then instead destroy their next lowest.",
+        "date": "2016-11-24T08:00:00.000Z",
+        "author": "sharpo"
+      }
+    ]
+  },
+  {
+    "card": "Overpower",
+    "abilityText": "Excess combat damage this would deal to a patroller hits something else this could attack.",
+    "slug": "overpower",
+    "rulings": [
+      {
+        "ruling": "The excess combat damage from the first target can go to only one additional target. It can't cascade beyond that to hit even more targets.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "The \"excess\" combat damage is the damage beyond the remaining HP of the thing you attacked. It doesn't matter if the thing actually dies or not, the damage beyond its HP is still counted as \"excess.\" For example, if you attack a 1/1 indestructible unit such as Hardened Mox with a 3/4 overpower unit such as Centaur, there is 2 excess damage even though the Mox doesn't die. That 2 excess damage can hit something else that that Centaur could have legally attacked.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "When determining what an overpower attacker \"could have attacked\" you still obey all the normal rules of attacking. If there are any patrollers other than the one actually attacked that would have been possible for the overpower attacker to attack, the excess combat damage has to go to one of them rather than say, a tech building. If there aren't any other patrollers that the overpower unit or hero could have attacked, then the excess damage can go to anything with HP that's controlled by the player (or team in 2v2) whose patroller was attacked.",
+        "date": "2016-09-13T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "Overpower does nothing when you attack a non-patroller. It also does nothing on defense (when your overpower unit or hero gets attacked).",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "Overpower damage still counts as combat damage (it can kill Gilded Glaxx for example) and it counts as an ability (so something that has overpower cannot get +2/+2 from Midori's middle ability).",
+        "date": "2016-03-19T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "Overpower does not stack. Having two instances of overpower is the same as having just one.",
+        "date": "2016-09-16T07:00:00.000Z",
+        "author": "sharpo"
+      }
+    ]
+  },
+  {
+    "card": "Readiness",
+    "abilityText": "Doesn't exhaust to attack, but can only attack once per turn.",
+    "slug": "readiness",
+    "rulings": [
+      {
+        "ruling": "Readiness doesn't let you ignore any other attacking rules. You still can't attack with something that's exhausted, and you still can't attack with it the turn it comes under your control (unless it also has haste.)",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "If you attack with something that has readiness, it won't exhaust. You CAN exhaust it to pay for the cost of a spell or ability (or as an effect from a spell or ability), even though you can't attack with it again that turn.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "Things with readiness can only attack once per turn, even if an effect would normally let them attack again. When cards leave play and then come back (for example, from Geiger or Pasternaak's max level abilities), they count as new objects though. So it IS possible to attack with something with readiness, have it leave play from one of those abilities, return, and if it has haste it could attack again.",
+        "date": "2016-03-19T07:00:00.000Z",
+        "author": "Sirlin"
+      }
+    ]
+  },
+  {
+    "card": "Resist X",
+    "abilityText": "Opponents must pay X each time they would target this with a spell or ability.",
+    "slug": "resist_x",
+    "rulings": [
+      {
+        "ruling": "This has nothing to do with attacking. Opponents don't have to pay to attack something with resist, they only have to pay to target it with spells or abilities.",
+        "date": "2016-03-11T08:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "This does stack, so if one of your units gets resist 1 twice, opponents must pay 2 gold to target it with spells or abilities.",
+        "date": "2016-03-11T08:00:00.000Z",
+        "author": "Sirlin"
+      }
+    ]
+  },
+  {
+    "card": "Sparkshot",
+    "abilityText": "When attacking a patroller, deals 1 damage to an adjacent patroller.",
+    "slug": "sparkshot",
+    "rulings": [
+      {
+        "ruling": "Sparkshot can only hit something 1 slot over from the thing you're attacking (an adjacent slot). It can't hit something two slots away even if it's the closest patroller (that is no longer ADJACENT to the thing you're attacking).",
+        "date": "2016-03-11T08:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "This counts as combat damage (it can kill Gilded Glaxx for example) and it counts as an ability (so something that has sparkshot cannot get +2/+2 from Midori's middle ability).",
+        "date": "2016-03-11T08:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "Sparkshot damage is dealt simultaneously with all other combat damage.",
+        "date": "2016-03-11T08:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "Sparkshot CAN hit a flier even if the attacker with sparkshot doesn't have anti-air.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "Sparkshot doesn't [target].",
+        "date": "2016-03-27T07:00:00.000Z",
+        "author": "sharpo"
+      },
+      {
+        "ruling": "Sparkshot does stack. A unit with 2 instances of sparkshot will get to deal 2 damage to an adjacent patroller or 1 damage to each of 2 adjacent patrollers.",
+        "date": "2016-09-16T07:00:00.000Z",
+        "author": "sharpo"
+      }
+    ]
+  },
+  {
+    "card": "Stealth",
+    "abilityText": "Can sneak past patrollers if that opponent has no detector.",
+    "slug": "stealth",
+    "rulings": [
+      {
+        "ruling": "\"Sneaking past\" means you can ignore patrollers when attacking and attack anything you want. You can also attack the patrollers if you prefer.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "When something with stealth attacks an enemy unit or hero, that enemy unit or hero DOES deal its combat damage back as usual.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "If an opponent has the Tower add-on and their tower has already used its once-per-turn detect on something, then you attack with something that has stealth, the Tower will not deal its damage to your stealth thing. It would if it's once-per-turn detect hadn't been used, but it can only damage things it can see.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      }
+    ]
+  },
+  {
+    "card": "Stash",
+    "abilityText": "You may keep a card during the draw/discard step. If you do, draw one card less.",
+    "slug": "stash",
+    "rulings": [
+      {
+        "ruling": "An example of how stash works. Normally (without stash), if you have 2 cards left in hand when you reach the discard/draw phase, you'd discard both cards and then draw 4 cards (you draw 2 more than you discard). If you have stash, instead of discarding both cards, you can choose to keep one of them in your hand. If you do, you will STILL end up with 4 cards total, but you'll be drawing 3 cards rather than 4 (the 4th card is the one you kept).",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      }
+    ]
+  },
+  {
+    "card": "Swift Strike",
+    "abilityText": "Deals its combat damage before units and heroes without swift strike.",
+    "slug": "swift_strike",
+    "rulings": [
+      {
+        "ruling": "Combat damage is dealt simultaneously if the attacker and the thing it's attacking both have swift strike.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "If swift strike damage kills a unit or hero in combat that does not have swift strike, the non-swift strike unit or hero dies before it gets a chance to deal combat damage.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      }
+    ]
+  },
+  {
+    "card": "Unstoppable",
+    "abilityText": "Can ignore patrollers when attacking.",
+    "slug": "unstoppable",
+    "rulings": [
+      {
+        "ruling": "Having a detector (or a Tower add-on) doesn't help against the unstoppable keywords. Even then, unstoppable attackers can ignore patrollers.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      }
+    ]
+  },
+  {
+    "card": "Untargetable",
+    "abilityText": "Can't be the [target] of spells or abilities.",
+    "slug": "untargetable",
+    "rulings": [
+      {
+        "ruling": "Something that's untargetable still CAN be attacked. It can even be affected by some spells and abilities, but NOT spells or abilities that use the [target] symbol.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      }
+    ]
+  },
+  {
+    "card": "Flagbearer",
+    "slug": "flagbearer",
+    "rulings": [
+      {
+        "ruling": "Only spells and abilities that use the [target] symbol interact with a flagbearer. For example, Manufactured Truth does NOT have the [target] symbol, so it can copy a unit other than a flagbearer even if the opponent has a flagbearer.",
+        "date": "2016-03-04T08:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "This has nothing to do with attacking. The flagbearer effect only interacts with spells and abilities that use the [target] symbol, not with declaring attacks. You don't have to attack a flagbearer before you attack other things.",
+        "date": "2016-03-04T08:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "If you cannot target a flagbearer for some reason, then you don't have to and you can ignore it. For example, if a flagbearer has resist 1 (which requires you to pay 1 gold to target it) and you have 0 gold, you don't have to target it. Or in other words, if you have a spell that costs 4 and that targets, and you have exactly 4 gold, you CAN ignore a flagbearer with resist 1 because it's impossible for you to pay the resist cost in this case, and thus impossible to target the flagbearer.",
+        "date": "2016-03-04T08:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "If a spell can target multiple things, such as Ember Sparks, and it can target a flagbearer, it only needs to target that flagbearer once. For example, you might split Ember Sparks to do 1 damage to a Frog, 1 damage to a Skeleton, and 1 damage to a Flagbearer. That's legal and still obeys the flagbearer's effect. ",
+        "date": "2016-03-04T08:00:00.000Z",
+        "author": "Sirlin"
+      }
+    ]
+  },
+  {
+    "card": "Tower",
+    "abilityText": "Detects stealth/invisible once per turn. Deals 1 damage to each attacker (that it can see).",
+    "slug": "tower",
+    "rulings": [
+      {
+        "ruling": "The damage dealt by the tower is considered combat damage (so if it kills a Brave Knight that counts as \"dying from combat damage\"). It also means that the damage is dealt simultaneously with other combat damage.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "If the attacker has swift strike, the tower still deals combat damage simultaneously as the swift strike. If the attacker has long-range, the tower still deals it damage to the attacker. If the attacker has flying, the tower still hits it as if it had anti-air.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "The tower deals 1 damage to attackers who are attacking ANYTHING controlled by the player (or team in 2v2) with the tower. It doesn't just trigger when they attack the tower itself.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "On an opponent's turn, your tower uses its detect ability the first time it can. For example, if the opponent attacks you with a stealth 1/1, the tower will automatically reveal it, and that attacker can't ignore your patrollers. If the opponent then attacks with an 8/8 stealth unit, the tower won't detect it because it already used its ability once that turn.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "If an attacker has stealth or invisible AND another evasion ability such as unstoppable, the tower will still use its once-per-turn detect so that it can deal 1 damage to the attacker. This won't prevent the atatcker from using evasion abilities such as unstoppable though, so it can still ignore patrollers when it attacks.",
+        "date": "2016-03-19T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "If the tower already used its detect ability on an opponent's turn, then that opponent attacks with a stealth/invisible unit or hero, the tower won't hit that attacker. It won't even hit the attacker if it attacks the tower itself. In this example, the tower already used up its detect ability and it can't hit any more stealth/invisible attackers that turn.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "When you reveal a stealth/invisible thing with your tower, that thing stays revealed the rest of the turn. It is legal for you to cast multiple spells that target that revealed thing later that turn.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      },
+      {
+        "ruling": "In free-for-all, the tower will only hit an attacker that is attacking things you control. It won't hit an attacker that is attacking things controlled by one of your opponents.",
+        "date": "2016-03-14T07:00:00.000Z",
+        "author": "Sirlin"
+      }
+    ]
+  },
+  {
+    "card": "Tech Lab",
+    "abilityText": "Unlock an additional spec.",
+    "slug": "tech_lab",
+    "rulings": [
+      {
+        "ruling": "If you choose one spec for your Tech Lab, you can build another Tech Lab later and choose a different spec.",
+        "date": "2016-06-16T07:00:00.000Z",
+        "author": "sharpo"
+      },
+      {
+        "ruling": "If you have a Tech Lab but have not built a Tech 2 building, you do not choose a spec for your Tech Lab. Later when you build your Tech 2 building, you will choose the spec for the Tech 2 building and for the Tech Lab.",
+        "date": "2016-06-16T07:00:00.000Z",
+        "author": "sharpo"
+      }
+    ]
+  },
+  {
+    "card": "Heroes' Hall",
+    "abilityText": "You may have an additional hero in play.",
+    "slug": "heroes_hall",
+    "rulings": [
+      {
+        "ruling": "Heroes' Hall only does anything when you want to play a hero. You can determine how many heroes you can play like so:\n- If you have an active Tech 3 building, or you have an active Tech 2 building and an active Heroes' Hall, you can play all 3 heroes.\n- If you have an active Tech 2 building or an active Heroes' Hall, you can play 2 heroes.\n- Otherwise, you can play only 1 hero.",
+        "date": "2016-06-16T07:00:00.000Z",
+        "author": "sharpo"
+      },
+      {
+        "ruling": "Losing Heroes' Hall won't cause any of your heroes to leave play.",
+        "date": "2016-06-16T07:00:00.000Z",
+        "author": "sharpo"
+      }
+    ]
+  },
+  {
+    "card": "Limit: X",
+    "slug": "limit_x",
+    "rulings": [
+      {
+        "ruling": "Limit: X is a rule that applies to some kinds of tokens. It means \"If summoning the number of tokens indicated by an ability would cause you to have X or more of that kind of token in play, instead only summon enough tokens to bring your number of copies of that token up to X.\"",
+        "date": "2016-11-24T08:00:00.000Z",
+        "author": "sharpo"
+      },
+      {
+        "ruling": "You might still end up having more than X of a token in play, for example if you steal them from your opponent.",
+        "date": "2016-11-24T08:00:00.000Z",
+        "author": "sharpo"
+      },
+      {
+        "ruling": "When a card specifies that Limit: X applies to one way of creating tokens, that limit applies to all ways of creating that kind of token in the whole game.",
+        "date": "2016-11-24T08:00:00.000Z",
+        "author": "sharpo"
+      },
+      {
+        "ruling": "Limit: X on some kind of token applies to things that are that token before considering copy effects or Polymorph: Squirrel. So Quince's Mirror Illusion tokens will apply against his limit of 2 Mirror Illusions even if they are copying something else.",
+        "date": "2016-11-24T08:00:00.000Z",
+        "author": "sharpo"
+      }
+    ]
+  },
+  {
+    "card": "Arrival Fatigue",
+    "abilityText": "All card type have arrival fatigue, which means the turn they come under your control, they can't use abilities that require exhausting as part of the cost. If they are units or heroes, it means they also can't attack the turn they come under your control. If a card has haste though, it CAN attack and use exhaust abilities the turn it comes under your control.",
+    "slug": "arrival_fatigue",
+    "rulings": [
+      {
+        "ruling": "Simplified, it means if the card is not under your control since the very beginning of your turn, it has arrival fatigue.",
+        "date": "2016-01-17T08:00:00.000Z",
+        "author": "Wildhorn"
+      },
+      {
+        "ruling": "Arrival fatigue is tied to the card itself, so if a Sirus Quince's Mirror Illusion has been under your control since the beginning of your turn and it copies something, even if the copied card has arrival fatigue, the Mirror Illusion doesn't. The opposite is also true, if you summon a Mirror Illusion and copy something doesn't have arrival fatigue with Sirus Quince's midband, the Mirror Illusion still has arrival fatigue.",
+        "date": "2016-01-17T08:00:00.000Z",
+        "author": "Wildhorn"
+      }
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+import React from "react";
+import Link from "gatsby-link";
+import { css } from "emotion";
+
+const Map = ({ data: { mapsJson } }) => (
+  <div>
+    <h1
+      className={css`
+        margin-left: 15px;
+      `}
+    >
+      {mapsJson.name}
+    </h1>
+
+    <div
+      className={css`
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 720px) {
+          flex-direction: row;
+        }
+      `}
+    >
+      <div
+        className={css`
+          flex: 0 0 auto;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          @media (min-width: 720px) {
+            margin-right: 1.0875rem;
+          }
+        `}
+      >
+        <img
+          src={`http://codexcards-assets.surge.sh/images/${mapsJson.filename}`}
+          alt={mapsJson.name}
+          className={css`
+            @media (min-width: 370px) {
+              width: 330px;
+              height: 450px;
+            }
+          `}
+        />
+      </div>
+
+      <div
+        className={css`
+          flex: 1 1 0px;
+          margin-top: 15px;
+        `}
+      >
+        <p>
+          {mapsJson.name}
+          {" — "}
+          <Link to="/maps">Map</Link>
+        </p>
+
+        <blockquote>{mapsJson.description}</blockquote>
+      </div>
+    </div>
+
+    {/* {<pre>{JSON.stringify(mapsJson, null, "  ")}</pre>} */}
+  </div>
+);
+
+export default Map;
+
+export const query = graphql`
+  query MapQuery($slug: String!) {
+    mapsJson(slug: { eq: $slug }) {
+      name
+      description
+      filename
+      slug
+    }
+  }
+`;
