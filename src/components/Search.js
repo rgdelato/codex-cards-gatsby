@@ -48,7 +48,7 @@ class Search extends React.Component {
         autoselect: true,
         autoselectOnBlur: true,
         cssClasses: {
-          root: `${this.props.className} ui icon input algolia-autocomplete`
+          root: `ui icon input algolia-autocomplete`
         }
       },
       {
@@ -70,7 +70,7 @@ class Search extends React.Component {
     const { className } = this.props;
 
     return (
-      <div className={`ui icon input`}>
+      <div className={`${className} ui icon input`}>
         <input
           ref={el => {
             this.input = el;
