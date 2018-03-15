@@ -32,7 +32,7 @@ const MapsPage = ({ data }) => (
       ))}
     </div>
 
-    <pre>{JSON.stringify(data, null, "  ")}</pre>
+    {/* <pre>{JSON.stringify(data, null, "  ")}</pre> */}
   </div>
 );
 

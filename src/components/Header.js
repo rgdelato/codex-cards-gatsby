@@ -16,7 +16,6 @@ const Header = () => (
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
-        max-width: 1070px;
         padding: 1.45rem 1.0875rem;
       `}
     >
