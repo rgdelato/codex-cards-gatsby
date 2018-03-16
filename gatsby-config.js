@@ -12,12 +12,16 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `data`,
+        name: "data",
         path: `${__dirname}/src/data`
       }
     },
-    "gatsby-transformer-json"
+    "gatsby-transformer-json",
+    {
+      resolve: "gatsby-plugin-create-client-paths",
+      options: { prefixes: ["/deck/*"] }
+    }
   ]
 };

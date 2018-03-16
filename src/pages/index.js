@@ -48,6 +48,7 @@ const IndexPage = () => (
 
     <p>
       <Link to="/card/random">Random Card</Link> |{" "}
+      <Link to="/deck/random">Random Deck</Link> |{" "}
       <Link to="/map/random">Random Map</Link>
     </p>
 

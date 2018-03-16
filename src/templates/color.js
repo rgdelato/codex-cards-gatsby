@@ -21,7 +21,19 @@ const Color = ({
           text-align: center;
         `}
       >
-        <small>[ {specs.join(" / ")} ]</small>
+        <small>
+          [{" "}
+          {spec1 && spec2 && spec3 ? (
+            <Link
+              to={`/deck/${toSlug(spec1)}/${toSlug(spec2)}/${toSlug(spec3)}`}
+            >
+              {specs.join(" / ")}
+            </Link>
+          ) : (
+            <Link to={`/color/${toSlug(color)}`}>{specs.join(" / ")}</Link>
+          )}{" "}
+          ]
+        </small>
         <br />
         <small>
           [{" "}

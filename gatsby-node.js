@@ -25,7 +25,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     `).then(result => {
       result.data.allColorsJson.edges.forEach(({ node }) => {
         createPage({
-          path: `/color/${node.slug}`,
+          path: `/color/${node.slug}/`,
           component: path.resolve(`./src/templates/color.js`),
           context: {
             color: node.color
@@ -33,7 +33,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         });
 
         createPage({
-          path: `/color/${node.slug}/images`,
+          path: `/color/${node.slug}/images/`,
           component: path.resolve(`./src/templates/images.js`),
           context: {
             color: node.color
@@ -65,7 +65,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     `).then(result => {
       result.data.allCardsJson.edges.forEach(({ node }) => {
         createPage({
-          path: `/card/${node.slug}`,
+          path: `/card/${node.slug}/`,
           component: path.resolve(`./src/templates/card.js`),
           context: {
             slug: node.slug,
@@ -76,20 +76,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
       resolve();
     });
-  });
-
-  // create "/deck/" pages...
-  // implemented as client-only routes since it would be 13680 pages otherwise
-  createPage({
-    path: `/deck/:spec1/:spec2/:spec3`,
-    matchPath: `/deck/:spec1/:spec2/:spec3`,
-    component: path.resolve(`./src/templates/deck.js`)
-  });
-
-  createPage({
-    path: `/deck/:spec1/:spec2/:spec3/images`,
-    matchPath: `/deck/:spec1/:spec2/:spec3/images`,
-    component: path.resolve(`./src/templates/deck.js`)
   });
 
   // create "/map/" pages
@@ -107,7 +93,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     `).then(result => {
       result.data.allMapsJson.edges.forEach(({ node }) => {
         createPage({
-          path: `/map/${node.slug}`,
+          path: `/map/${node.slug}/`,
           component: path.resolve(`./src/templates/map.js`),
           context: {
             slug: node.slug
@@ -134,7 +120,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     `).then(result => {
       result.data.allGeneralJson.edges.forEach(({ node }) => {
         createPage({
-          path: `/ruling/${node.slug}`,
+          path: `/ruling/${node.slug}/`,
           component: path.resolve(`./src/templates/ruling.js`),
           context: {
             slug: node.slug

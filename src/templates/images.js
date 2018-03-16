@@ -35,7 +35,21 @@ const Images = ({
           ]
         </small>
         <br />
-        <small>[ All Images ]</small>
+        <small>
+          [{" "}
+          {spec1 && spec2 && spec3 ? (
+            <Link
+              to={`/deck/${toSlug(spec1)}/${toSlug(spec2)}/${toSlug(
+                spec3
+              )}/images`}
+            >
+              All Images
+            </Link>
+          ) : (
+            <Link to={`/color/${toSlug(color)}/images`}>All Images</Link>
+          )}{" "}
+          ]
+        </small>
       </p>
 
       <div
