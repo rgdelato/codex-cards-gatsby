@@ -1,0 +1,102 @@
+[
+  {
+    "spec": "Discipline",
+    "color": "White",
+    "slug": "discipline"
+  },
+  {
+    "spec": "Ninjutsu",
+    "color": "White",
+    "slug": "ninjutsu"
+  },
+  {
+    "spec": "Strength",
+    "color": "White",
+    "slug": "strength"
+  },
+  {
+    "spec": "Law",
+    "color": "Blue",
+    "slug": "law"
+  },
+  {
+    "spec": "Peace",
+    "color": "Blue",
+    "slug": "peace"
+  },
+  {
+    "spec": "Truth",
+    "color": "Blue",
+    "slug": "truth"
+  },
+  {
+    "spec": "Demonology",
+    "color": "Black",
+    "slug": "demonology"
+  },
+  {
+    "spec": "Disease",
+    "color": "Black",
+    "slug": "disease"
+  },
+  {
+    "spec": "Necromancy",
+    "color": "Black",
+    "slug": "necromancy"
+  },
+  {
+    "spec": "Anarchy",
+    "color": "Red",
+    "slug": "anarchy"
+  },
+  {
+    "spec": "Blood",
+    "color": "Red",
+    "slug": "blood"
+  },
+  {
+    "spec": "Fire",
+    "color": "Red",
+    "slug": "fire"
+  },
+  {
+    "spec": "Balance",
+    "color": "Green",
+    "slug": "balance"
+  },
+  {
+    "spec": "Feral",
+    "color": "Green",
+    "slug": "feral"
+  },
+  {
+    "spec": "Growth",
+    "color": "Green",
+    "slug": "growth"
+  },
+  {
+    "spec": "Past",
+    "color": "Purple",
+    "slug": "past"
+  },
+  {
+    "spec": "Present",
+    "color": "Purple",
+    "slug": "present"
+  },
+  {
+    "spec": "Future",
+    "color": "Purple",
+    "slug": "future"
+  },
+  {
+    "spec": "Bashing",
+    "color": "Neutral",
+    "slug": "bashing"
+  },
+  {
+    "spec": "Finesse",
+    "color": "Neutral",
+    "slug": "finesse"
+  }
+]

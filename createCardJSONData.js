@@ -77,13 +77,6 @@ var keywords = Object.keys(
     {}
   )
 );
-// ).map(keyword => {
-//   if (keyword.lastIndexOf(" X") === keyword.length - 2) {
-//     return keyword.slice(0, -2);
-//   } else {
-//     return keyword;
-//   }
-// });
 
 var createKeywords = item => {
   var uniqueKeywords = {};
@@ -183,6 +176,27 @@ var allCardsWithRulings = allCards.map(card =>
   })
 );
 
+var allColors = allCards.reduce((acc, card) => {
+  var existingColor = acc.filter(color => color.color === card.color);
+  if (!card.color || existingColor[0]) {
+    return acc;
+  } else {
+    return [...acc, { color: card.color, slug: toSlug(card.color) }];
+  }
+}, []);
+
+var allSpecs = allCards.reduce((acc, card) => {
+  var existingSpec = acc.filter(spec => spec.spec === card.spec);
+  if (!card.spec || existingSpec[0]) {
+    return acc;
+  } else {
+    return [
+      ...acc,
+      { spec: card.spec, color: card.color, slug: toSlug(card.spec) }
+    ];
+  }
+}, []);
+
 fs.writeFileSync(
   "src/data/cards.json",
   JSON.stringify(allCardsWithRulings, null, "  ")
@@ -205,3 +219,7 @@ fs.writeFileSync(
   "src/data/general.json",
   JSON.stringify(generalRulings, null, "  ")
 );
+
+fs.writeFileSync("src/data/colors.json", JSON.stringify(allColors, null, "  "));
+
+fs.writeFileSync("src/data/specs.json", JSON.stringify(allSpecs, null, "  "));

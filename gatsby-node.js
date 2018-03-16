@@ -10,31 +10,38 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
 
   // create "/color/" pages
-  const colors = [
-    "Neutral",
-    "Red",
-    "Green",
-    "Blue",
-    "Black",
-    "White",
-    "Purple"
-  ];
-
-  colors.forEach(color => {
-    createPage({
-      path: `/color/${color.toLowerCase()}`,
-      component: path.resolve(`./src/templates/color.js`),
-      context: {
-        color: color
+  const colorPromise = new Promise((resolve, reject) => {
+    graphql(`
+      {
+        allColorsJson {
+          edges {
+            node {
+              color
+              slug
+            }
+          }
+        }
       }
-    });
+    `).then(result => {
+      result.data.allColorsJson.edges.forEach(({ node }) => {
+        createPage({
+          path: `/color/${node.slug}`,
+          component: path.resolve(`./src/templates/color.js`),
+          context: {
+            color: node.color
+          }
+        });
 
-    createPage({
-      path: `/color/${color.toLowerCase()}/images`,
-      component: path.resolve(`./src/templates/images.js`),
-      context: {
-        color: color
-      }
+        createPage({
+          path: `/color/${node.slug}/images`,
+          component: path.resolve(`./src/templates/images.js`),
+          context: {
+            color: node.color
+          }
+        });
+      });
+
+      resolve();
     });
   });
 
@@ -69,6 +76,20 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
       resolve();
     });
+  });
+
+  // create "/deck/" pages...
+  // implemented as client-only routes since it would be 13680 pages otherwise
+  createPage({
+    path: `/deck/:spec1/:spec2/:spec3`,
+    matchPath: `/deck/:spec1/:spec2/:spec3`,
+    component: path.resolve(`./src/templates/deck.js`)
+  });
+
+  createPage({
+    path: `/deck/:spec1/:spec2/:spec3/images`,
+    matchPath: `/deck/:spec1/:spec2/:spec3/images`,
+    component: path.resolve(`./src/templates/deck.js`)
   });
 
   // create "/map/" pages
@@ -125,5 +146,5 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     });
   });
 
-  return Promise.all([cardPromise, mapPromise, rulingPromise]);
+  return Promise.all([colorPromise, cardPromise, mapPromise, rulingPromise]);
 };

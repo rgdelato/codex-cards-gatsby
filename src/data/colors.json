@@ -1,0 +1,30 @@
+[
+  {
+    "color": "White",
+    "slug": "white"
+  },
+  {
+    "color": "Blue",
+    "slug": "blue"
+  },
+  {
+    "color": "Black",
+    "slug": "black"
+  },
+  {
+    "color": "Red",
+    "slug": "red"
+  },
+  {
+    "color": "Green",
+    "slug": "green"
+  },
+  {
+    "color": "Purple",
+    "slug": "purple"
+  },
+  {
+    "color": "Neutral",
+    "slug": "neutral"
+  }
+]

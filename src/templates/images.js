@@ -3,7 +3,10 @@ import Link from "gatsby-link";
 import { css } from "emotion";
 import toSlug from "../utils/toSlug";
 
-const Images = ({ data: { allCardsJson }, pathContext: { color } }) => {
+const Images = ({
+  data: { allCardsJson },
+  pathContext: { color, spec1, spec2, spec3 }
+}) => {
   const specsMap = allCardsJson.edges.reduce(
     (acc, { node }) => (node.spec ? { ...acc, [node.spec]: true } : acc),
     {}
@@ -19,7 +22,17 @@ const Images = ({ data: { allCardsJson }, pathContext: { color } }) => {
         `}
       >
         <small>
-          [ <Link to={`/color/${toSlug(color)}`}>{specs.join(" / ")}</Link> ]
+          [{" "}
+          {spec1 && spec2 && spec3 ? (
+            <Link
+              to={`/deck/${toSlug(spec1)}/${toSlug(spec2)}/${toSlug(spec3)}`}
+            >
+              {specs.join(" / ")}
+            </Link>
+          ) : (
+            <Link to={`/color/${toSlug(color)}`}>{specs.join(" / ")}</Link>
+          )}{" "}
+          ]
         </small>
         <br />
         <small>[ All Images ]</small>
@@ -107,10 +120,8 @@ export const query = graphql`
         node {
           name
           sirlins_filename
-          type
           starting_zone
           spec
-          bottom
           slug
         }
       }

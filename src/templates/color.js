@@ -3,7 +3,10 @@ import Link from "gatsby-link";
 import { css } from "emotion";
 import toSlug from "../utils/toSlug";
 
-const Color = ({ data: { allCardsJson }, pathContext: { color } }) => {
+const Color = ({
+  data: { allCardsJson },
+  pathContext: { color, spec1, spec2, spec3 }
+}) => {
   const specsMap = allCardsJson.edges.reduce(
     (acc, { node }) => (node.spec ? { ...acc, [node.spec]: true } : acc),
     {}
@@ -21,7 +24,19 @@ const Color = ({ data: { allCardsJson }, pathContext: { color } }) => {
         <small>[ {specs.join(" / ")} ]</small>
         <br />
         <small>
-          [ <Link to={`/color/${toSlug(color)}/images`}>All Images</Link> ]
+          [{" "}
+          {spec1 && spec2 && spec3 ? (
+            <Link
+              to={`/deck/${toSlug(spec1)}/${toSlug(spec2)}/${toSlug(
+                spec3
+              )}/images`}
+            >
+              All Images
+            </Link>
+          ) : (
+            <Link to={`/color/${toSlug(color)}/images`}>All Images</Link>
+          )}{" "}
+          ]
         </small>
       </p>
 
