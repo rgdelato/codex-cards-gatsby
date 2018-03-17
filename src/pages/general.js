@@ -3,7 +3,12 @@ import Link from "gatsby-link";
 import { css } from "emotion";
 
 const GeneralRulingsPage = ({ data }) => (
-  <div>
+  <div
+    className={css`
+      max-width: 1070px;
+      margin: 0 auto;
+    `}
+  >
     <h1>General Rulings</h1>
 
     <div

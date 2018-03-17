@@ -3,7 +3,12 @@ import Link from "gatsby-link";
 import { css } from "emotion";
 
 const Map = ({ data: { mapsJson } }) => (
-  <div>
+  <div
+    className={css`
+      max-width: 1070px;
+      margin: 0 auto;
+    `}
+  >
     <h1
       className={css`
         margin-left: 15px;

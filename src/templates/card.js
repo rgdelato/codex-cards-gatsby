@@ -5,7 +5,12 @@ import formatDate from "date-fns/format";
 import toSlug from "../utils/toSlug";
 
 const Card = ({ data: { cardsJson } }) => (
-  <div>
+  <div
+    className={css`
+      max-width: 1070px;
+      margin: 0 auto;
+    `}
+  >
     <h1
       className={css`
         margin-left: 15px;
