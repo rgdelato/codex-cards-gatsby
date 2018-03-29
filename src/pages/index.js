@@ -2,8 +2,8 @@ import React from "react";
 import Link from "gatsby-link";
 import { css } from "emotion";
 import Search from "../components/Search";
-import algoliaSVG from "../images/search-by-algolia.svg";
-import githubPNG from "../images/GitHub-Mark-64px.png";
+import algoliaSVG from "../images/logos/search-by-algolia.svg";
+import githubPNG from "../images/logos/GitHub-Mark-64px.png";
 
 class IndexPage extends React.Component {
   specs = this.props.data.allSpecsJson.edges.map(edge => edge.node);

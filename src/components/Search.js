@@ -3,7 +3,7 @@ import { injectGlobal } from "emotion";
 import algoliasearch from "algoliasearch";
 import withRouter from "react-router/withRouter";
 import toSlug from "../utils/toSlug";
-import algoliaSVG from "../images/search-by-algolia.svg";
+import algoliaSVG from "../images/logos/search-by-algolia.svg";
 
 var client = algoliasearch("BK93IMJECS", "3b6c5e0c15c9296b4baa54ac5d49e38e");
 var index = client.initIndex("allCardsJson");

@@ -6,3 +6,9 @@ yarn-error.log
 
 # Build directory
 /public
+
+# JSON directory
+/src/data
+
+# Images directory
+/src/images
