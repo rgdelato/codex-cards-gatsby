@@ -16,8 +16,10 @@ class RandomCardPage extends React.Component {
   }
 
   render() {
+    const { site } = this.props.data;
+
     if (this.state.card) {
-      return <CardPage data={{ cardsJson: this.state.card }} />;
+      return <CardPage data={{ cardsJson: this.state.card, site }} />;
     } else {
       return null; // loading...
     }
@@ -75,6 +77,12 @@ export const query = graphql`
 
           keywords
         }
+      }
+    }
+
+    site {
+      siteMetadata {
+        title
       }
     }
   }

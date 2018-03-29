@@ -1,14 +1,17 @@
 import React from "react";
 import Link from "gatsby-link";
+import Helmet from "react-helmet";
 import { css } from "emotion";
 
-const Map = ({ data: { mapsJson } }) => (
+const Map = ({ data: { mapsJson, site } }) => (
   <div
     className={css`
       max-width: 1070px;
       margin: 0 auto;
     `}
   >
+    <Helmet title={`${site.siteMetadata.title} | ${mapsJson.name}`} />
+
     <h1
       className={css`
         margin-left: 15px;
@@ -78,6 +81,12 @@ export const query = graphql`
       description
       filename
       slug
+    }
+
+    site {
+      siteMetadata {
+        title
+      }
     }
   }
 `;

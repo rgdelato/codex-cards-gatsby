@@ -69,7 +69,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           component: path.resolve(`./src/templates/card.js`),
           context: {
             slug: node.slug,
-            keywords: node.keywords
+            keywords: node.keywords,
+            imageRegex: `/${node.slug}.jpg/`
           }
         });
       });

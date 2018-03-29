@@ -8,10 +8,12 @@ import "typeface-montserrat";
 import "semantic-ui-input/input.min.css";
 import "semantic-ui-icon/icon.min.css";
 
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({ children, data: { site } }) => (
   <div>
-    <Helmet title="Codex Card Database" />
+    <Helmet title={site.siteMetadata.title} />
+
     <Header />
+
     <div
       className={css`
         margin: 0 auto;
@@ -29,3 +31,13 @@ TemplateWrapper.propTypes = {
 };
 
 export default TemplateWrapper;
+
+export const query = graphql`
+  query LayoutQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`;

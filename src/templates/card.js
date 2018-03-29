@@ -1,16 +1,20 @@
 import React from "react";
 import Link from "gatsby-link";
+// import Img from "gatsby-image";
+import Helmet from "react-helmet";
 import { css } from "emotion";
 import formatDate from "date-fns/format";
 import toSlug from "../utils/toSlug";
 
-const Card = ({ data: { cardsJson } }) => (
+const Card = ({ data: { cardsJson, imageSharp, site }, ...props }) => (
   <div
     className={css`
       max-width: 1070px;
       margin: 0 auto;
     `}
   >
+    <Helmet title={`${site.siteMetadata.title} | ${cardsJson.name}`} />
+
     <h1
       className={css`
         margin-left: 15px;
@@ -39,18 +43,26 @@ const Card = ({ data: { cardsJson } }) => (
           }
         `}
       >
-        <img
-          src={`//codexcards-assets.surge.sh/images/${
-            cardsJson.sirlins_filename
-          }`}
-          alt={cardsJson.name}
+        <div
           className={css`
-            @media (min-width: 370px) {
-              width: 330px;
-              height: 450px;
-            }
+            background-image: url("${imageSharp.resolutions.tracedSVG}");
+            background-repeat: no-repeat;
+            background-size: contain;
           `}
-        />
+        >
+          <img
+            src={`//codexcards-assets.surge.sh/images/${
+              cardsJson.sirlins_filename
+            }`}
+            alt={cardsJson.name}
+            className={css`
+              @media (min-width: 370px) {
+                width: 330px;
+                height: 450px;
+              }
+            `}
+          />
+        </div>
       </div>
 
       <div
@@ -147,7 +159,7 @@ const Card = ({ data: { cardsJson } }) => (
 export default Card;
 
 export const query = graphql`
-  query CardQuery($slug: String!) {
+  query CardQuery($slug: String!, $imageRegex: String!) {
     cardsJson(slug: { eq: $slug }) {
       name
       starting_zone
@@ -192,6 +204,18 @@ export const query = graphql`
       }
 
       keywords
+    }
+
+    imageSharp(id: { regex: $imageRegex }) {
+      resolutions(width: 330, height: 450, quality: 100) {
+        ...GatsbyImageSharpResolutions_withWebp_tracedSVG
+      }
+    }
+
+    site {
+      siteMetadata {
+        title
+      }
     }
   }
 `;

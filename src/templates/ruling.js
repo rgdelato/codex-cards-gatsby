@@ -1,14 +1,17 @@
 import React from "react";
+import Helmet from "react-helmet";
 import { css } from "emotion";
 import formatDate from "date-fns/format";
 
-const Ruling = ({ data: { generalJson } }) => (
+const Ruling = ({ data: { generalJson, site } }) => (
   <div
     className={css`
       display: flex;
       justify-content: center;
     `}
   >
+    <Helmet title={`${site.siteMetadata.title} | ${generalJson.card}`} />
+
     <div
       className={css`
         max-width: 681.312px;
@@ -48,6 +51,12 @@ export const query = graphql`
         ruling
         author
         date
+      }
+    }
+
+    site {
+      siteMetadata {
+        title
       }
     }
   }

@@ -16,8 +16,10 @@ class RandomMapPage extends React.Component {
   }
 
   render() {
+    const { site } = this.props.data;
+
     if (this.state.card) {
-      return <MapPage data={{ mapsJson: this.state.card }} />;
+      return <MapPage data={{ mapsJson: this.state.card, site }} />;
     } else {
       return null; // loading...
     }
@@ -36,6 +38,12 @@ export const query = graphql`
           filename
           slug
         }
+      }
+    }
+
+    site {
+      siteMetadata {
+        title
       }
     }
   }
