@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import Helmet from "react-helmet";
 import { css } from "emotion";
 
-const Map = ({ data: { mapsJson, site } }) => (
+const Map = ({ data: { mapsJson, imageSharp, site } }) => (
   <div
     className={css`
       max-width: 1070px;
@@ -40,16 +40,26 @@ const Map = ({ data: { mapsJson, site } }) => (
           }
         `}
       >
-        <img
-          src={`//codexcards-assets.surge.sh/images/${mapsJson.filename}`}
-          alt={mapsJson.name}
+        <div
           className={css`
-            @media (min-width: 370px) {
-              width: 330px;
-              height: 450px;
-            }
+            background-image: url("${imageSharp &&
+              imageSharp.resolutions &&
+              imageSharp.resolutions.tracedSVG}");
+            background-repeat: no-repeat;
+            background-size: contain;
           `}
-        />
+        >
+          <img
+            src={`//codexcards-assets.surge.sh/images/${mapsJson.filename}`}
+            alt={mapsJson.name}
+            className={css`
+              @media (min-width: 370px) {
+                width: 330px;
+                height: 450px;
+              }
+            `}
+          />
+        </div>
       </div>
 
       <div
@@ -75,12 +85,18 @@ const Map = ({ data: { mapsJson, site } }) => (
 export default Map;
 
 export const query = graphql`
-  query MapQuery($slug: String!) {
+  query MapQuery($slug: String!, $imageRegex: String!) {
     mapsJson(slug: { eq: $slug }) {
       name
       description
       filename
       slug
+    }
+
+    imageSharp(id: { regex: $imageRegex }) {
+      resolutions(width: 330, height: 450, quality: 100) {
+        ...GatsbyImageSharpResolutions_withWebp_tracedSVG
+      }
     }
 
     site {

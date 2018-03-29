@@ -45,7 +45,9 @@ const Card = ({ data: { cardsJson, imageSharp, site }, ...props }) => (
       >
         <div
           className={css`
-            background-image: url("${imageSharp.resolutions.tracedSVG}");
+            background-image: url("${imageSharp &&
+              imageSharp.resolutions &&
+              imageSharp.resolutions.tracedSVG}");
             background-repeat: no-repeat;
             background-size: contain;
           `}

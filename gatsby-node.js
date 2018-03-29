@@ -97,7 +97,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           path: `/map/${node.slug}/`,
           component: path.resolve(`./src/templates/map.js`),
           context: {
-            slug: node.slug
+            slug: node.slug,
+            imageRegex: `/${node.slug}.jpg/`
           }
         });
       });
