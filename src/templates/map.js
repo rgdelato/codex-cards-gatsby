@@ -94,7 +94,7 @@ export const query = graphql`
     }
 
     imageSharp(id: { regex: $imageRegex }) {
-      resolutions(width: 330, height: 450, quality: 100) {
+      resolutions(width: 330, height: 450) {
         ...GatsbyImageSharpResolutions_withWebp_tracedSVG
       }
     }

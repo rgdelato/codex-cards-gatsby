@@ -41,6 +41,6 @@
     "deploy": "npm run build && cp CNAME public/CNAME && cd public && surge"
   },
   "devDependencies": {
-    "prettier": "^1.11.1"
+    "prettier": "^1.14.2"
   }
 }

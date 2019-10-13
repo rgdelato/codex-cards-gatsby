@@ -77,10 +77,10 @@ const Card = ({ data: { cardsJson, imageSharp, site }, ...props }) => (
           {cardsJson.type}
           {cardsJson.subtype && " — "}
           {cardsJson.subtype} • Cost: {cardsJson.cost}
-          {cardsJson.ATK && " • ATK: "}
-          {cardsJson.ATK}
-          {cardsJson.HP && " • HP: "}
-          {cardsJson.HP}
+          {cardsJson.ATK != null ? " • ATK: " : null}
+          {cardsJson.ATK != null ? cardsJson.ATK : null}
+          {cardsJson.HP != null ? " • HP: " : null}
+          {cardsJson.HP != null ? cardsJson.HP : null}
         </p>
 
         {cardsJson.type === "Hero" ? (
@@ -209,7 +209,7 @@ export const query = graphql`
     }
 
     imageSharp(id: { regex: $imageRegex }) {
-      resolutions(width: 330, height: 450, quality: 100) {
+      resolutions(width: 330, height: 450) {
         ...GatsbyImageSharpResolutions_withWebp_tracedSVG
       }
     }
