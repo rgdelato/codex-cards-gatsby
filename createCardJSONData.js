@@ -197,6 +197,8 @@ var allSpecs = allCards.reduce((acc, card) => {
   }
 }, []);
 
+fs.mkdirSync("src/data");
+
 fs.writeFileSync(
   "src/data/cards.json",
   JSON.stringify(allCardsWithRulings, null, "  ")
