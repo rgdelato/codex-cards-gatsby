@@ -11,4 +11,4 @@ yarn-error.log
 /src/data
 
 # Images directory
-/src/images
+/src/images/cards
