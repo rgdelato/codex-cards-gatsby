@@ -85,7 +85,10 @@ const Card = ({ data: { cardsJson, imageSharp, site }, ...props }) => (
 
         {cardsJson.type === "Hero" ? (
           <blockquote>
-            <strong>Level 1-{cardsJson.mid_level - 1}:</strong>{" "}
+            <strong>
+              Level 1-
+              {cardsJson.mid_level - 1}:
+            </strong>{" "}
             {cardsJson.base_text_1}
             {cardsJson.base_text_2 && <br />}
             {cardsJson.base_text_2} • ATK: {cardsJson.ATK_1} • HP:{" "}
@@ -161,7 +164,7 @@ const Card = ({ data: { cardsJson, imageSharp, site }, ...props }) => (
 export default Card;
 
 export const query = graphql`
-  query CardQuery($slug: String!, $imageRegex: String!) {
+  query CardQuery($slug: String!) {
     cardsJson(slug: { eq: $slug }) {
       name
       starting_zone
@@ -206,12 +209,6 @@ export const query = graphql`
       }
 
       keywords
-    }
-
-    imageSharp(id: { regex: $imageRegex }) {
-      resolutions(width: 330, height: 450) {
-        ...GatsbyImageSharpResolutions_withWebp_tracedSVG
-      }
     }
 
     site {

@@ -85,18 +85,12 @@ const Map = ({ data: { mapsJson, imageSharp, site } }) => (
 export default Map;
 
 export const query = graphql`
-  query MapQuery($slug: String!, $imageRegex: String!) {
+  query MapQuery($slug: String!) {
     mapsJson(slug: { eq: $slug }) {
       name
       description
       filename
       slug
-    }
-
-    imageSharp(id: { regex: $imageRegex }) {
-      resolutions(width: 330, height: 450) {
-        ...GatsbyImageSharpResolutions_withWebp_tracedSVG
-      }
     }
 
     site {
