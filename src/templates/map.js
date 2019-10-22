@@ -50,7 +50,10 @@ const Map = ({ data: { mapsJson, imageSharp, site } }) => (
           `}
         >
           <img
-            src={`//codexcards-assets.surge.sh/images/${mapsJson.filename}`}
+            src={
+              "//res.cloudinary.com/rgdelato/image/fetch/f_auto/http://codexcards-assets.surge.sh/images/" +
+              mapsJson.filename
+            }
             alt={mapsJson.name}
             className={css`
               @media (min-width: 370px) {

@@ -53,9 +53,10 @@ const Card = ({ data: { cardsJson, imageSharp, site }, ...props }) => (
           `}
         >
           <img
-            src={`//codexcards-assets.surge.sh/images/${
+            src={
+              "//res.cloudinary.com/rgdelato/image/fetch/f_auto/http://codexcards-assets.surge.sh/images/" +
               cardsJson.sirlins_filename
-            }`}
+            }
             alt={cardsJson.name}
             className={css`
               @media (min-width: 370px) {

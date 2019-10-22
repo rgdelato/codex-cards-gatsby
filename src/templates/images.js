@@ -71,9 +71,10 @@ const Images = ({
               >
                 <Link to={`/card/${node.slug}`}>
                   <img
-                    src={`//codexcards-assets.surge.sh/images/${
+                    src={
+                      "//res.cloudinary.com/rgdelato/image/fetch/f_auto/http://codexcards-assets.surge.sh/images/" +
                       node.sirlins_filename
-                    }`}
+                    }
                     alt={node.name}
                     className={css`
                       display: block;
@@ -101,9 +102,10 @@ const Images = ({
                 >
                   <Link to={`/card/${node.slug}`}>
                     <img
-                      src={`//codexcards-assets.surge.sh/images/${
+                      src={
+                        "//res.cloudinary.com/rgdelato/image/fetch/f_auto/http://codexcards-assets.surge.sh/images/" +
                         node.sirlins_filename
-                      }`}
+                      }
                       alt={node.name}
                       className={css`
                         display: block;
