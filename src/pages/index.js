@@ -33,7 +33,7 @@ class IndexPage extends React.Component {
         <h1>Codex Card Database</h1>
         <p>Card Texts, Rulings, and Randomizers</p>
 
-        <Search className="big" />
+        <Search className="big" tabIndex="1" autoFocus />
 
         <br />
         <br />

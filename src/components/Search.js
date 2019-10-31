@@ -64,14 +64,19 @@ class Search extends React.Component {
     this.input.addEventListener("autocomplete:selected", e => {
       this.props.history.push(`/card/${toSlug(e.target.value)}`);
     });
+
+    if (this.props.autoFocus) {
+      this.input.focus();
+    }
   }
 
   render() {
-    const { className } = this.props;
+    const { className, ...props } = this.props;
 
     return (
       <div className={`${className} ui icon input`}>
         <input
+          {...props}
           ref={el => {
             this.input = el;
           }}
