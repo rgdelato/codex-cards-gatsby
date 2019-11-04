@@ -10,7 +10,9 @@ import "semantic-ui-icon/icon.min.css";
 
 const TemplateWrapper = ({ children, data: { site } }) => (
   <div>
-    <Helmet title={site.siteMetadata.title} />
+    <Helmet>
+      <title>{site.siteMetadata.title}</title>
+    </Helmet>
 
     <Header />
 

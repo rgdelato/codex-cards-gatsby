@@ -67,12 +67,11 @@ class Search extends React.Component {
   }
 
   render() {
-    const { className, ...props } = this.props;
+    const { className } = this.props;
 
     return (
       <div className={`${className} ui icon input`}>
         <input
-          {...props}
           ref={el => {
             this.input = el;
           }}

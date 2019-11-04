@@ -13,7 +13,24 @@ const Card = ({ data: { cardsJson, imageSharp, site }, ...props }) => (
       margin: 0 auto;
     `}
   >
-    <Helmet title={`${site.siteMetadata.title} | ${cardsJson.name}`} />
+    <Helmet>
+      <title>{`${site.siteMetadata.title} | ${cardsJson.name}`}</title>
+      <meta
+        property="og:title"
+        content={`${site.siteMetadata.title} | ${cardsJson.name}`}
+      />
+      <meta
+        property="og:image"
+        content={
+          "https://res.cloudinary.com/rgdelato/image/fetch/f_auto/http://codexcards-assets.surge.sh/images/" +
+          cardsJson.sirlins_filename
+        }
+      />
+      <meta
+        property="og:url"
+        content={"https://www.codexcarddb.com/card/" + cardsJson.slug}
+      />
+    </Helmet>
 
     <h1
       className={css`
@@ -210,6 +227,8 @@ export const query = graphql`
       }
 
       keywords
+
+      slug
     }
 
     site {
