@@ -64,10 +64,6 @@ class Search extends React.Component {
     this.input.addEventListener("autocomplete:selected", e => {
       this.props.history.push(`/card/${toSlug(e.target.value)}`);
     });
-
-    if (this.props.autoFocus) {
-      this.input.focus();
-    }
   }
 
   render() {
