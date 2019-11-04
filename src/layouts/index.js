@@ -12,6 +12,8 @@ const TemplateWrapper = ({ children, data: { site } }) => (
   <div>
     <Helmet>
       <title>{site.siteMetadata.title}</title>
+      <meta name="og:site_name" content={site.siteMetadata.title} />
+      <meta name="og:type" content="website" />
     </Helmet>
 
     <Header />

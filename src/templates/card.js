@@ -16,18 +16,48 @@ const Card = ({ data: { cardsJson, imageSharp, site }, ...props }) => (
     <Helmet>
       <title>{`${site.siteMetadata.title} | ${cardsJson.name}`}</title>
       <meta
-        property="og:title"
-        content={`${site.siteMetadata.title} | ${cardsJson.name}`}
-      />
-      <meta
-        property="og:image"
+        name="image"
         content={
           "https://res.cloudinary.com/rgdelato/image/fetch/f_auto/http://codexcards-assets.surge.sh/images/" +
           cardsJson.sirlins_filename
         }
       />
       <meta
-        property="og:url"
+        itemprop="name"
+        content={`${site.siteMetadata.title} | ${cardsJson.name}`}
+      />
+      <meta
+        itemprop="image"
+        content={
+          "https://res.cloudinary.com/rgdelato/image/fetch/f_auto/http://codexcards-assets.surge.sh/images/" +
+          cardsJson.sirlins_filename
+        }
+      />
+      <meta name="twitter:card" content="summary" />
+      <meta
+        name="twitter:title"
+        content={`${site.siteMetadata.title} | ${cardsJson.name}`}
+      />
+      <meta
+        name="twitter:image:src"
+        content={
+          "https://res.cloudinary.com/rgdelato/image/fetch/f_auto/http://codexcards-assets.surge.sh/images/" +
+          cardsJson.sirlins_filename
+        }
+      />
+      <meta
+        name="og:title"
+        content={`${site.siteMetadata.title} | ${cardsJson.name}`}
+      />
+      <meta
+        name="og:image"
+        content={
+          "https://res.cloudinary.com/rgdelato/image/fetch/f_auto/http://codexcards-assets.surge.sh/images/" +
+          cardsJson.sirlins_filename
+        }
+      />
+      <meta
+        name="og:url"
         content={"https://www.codexcarddb.com/card/" + cardsJson.slug}
       />
     </Helmet>
